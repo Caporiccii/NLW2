@@ -5,6 +5,7 @@ import logoImg from '../../assets/images/logo.svg';
 import './style.css';
 interface PageHeaderProps{
     title:string;
+    description?:string;
 }
 
 const PageHeader: React.FunctionComponent<PageHeaderProps>
@@ -19,8 +20,10 @@ const PageHeader: React.FunctionComponent<PageHeaderProps>
           </div>
           <div className="header-content">
               <strong>
-                   {props.title}                
+                   {props.title}
               </strong>
+
+              {props.description && <p>{props.description}</p>}
               {props.children}
           </div>
           
