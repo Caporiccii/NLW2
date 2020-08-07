@@ -57,7 +57,7 @@ line-height: 2.8rem;
     display: block;
 }
 
-.teacher-item footer button{
+.teacher-item footer a{
 width: 20rem;
 height: 5.6rem;
 background: var(--color-secundary);
@@ -70,9 +70,10 @@ display: flex;
 align-items: center;
 justify-content: space-evenly;
 transition: 0.2;
+text-decoration: none;
 }
 
-.teacher-item footer button:hover{
+.teacher-item footer a:hover{
     opacity: var(--color-secundary-dark);
 }
 @media (min-width: 700px){
